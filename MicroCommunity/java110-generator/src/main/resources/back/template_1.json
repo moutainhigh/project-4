@@ -1,0 +1,44 @@
+{
+  "autoMove": true,
+  "id": "detailDiscountId",
+  "name": "payFeeDetailDiscount",
+  "desc": "缴费优惠",
+  "shareParam": "community_id",
+  "shareColumn": "communityId",
+  "shareName": "fee",
+  "newBusinessTypeCd": "BUSINESS_TYPE_SAVE_DETAIL_DISCOUNT_INFO",
+  "updateBusinessTypeCd": "BUSINESS_TYPE_UPDATE_DETAIL_DISCOUNT_INFO",
+  "deleteBusinessTypeCd": "BUSINESS_TYPE_DELETE_DETAIL_DISCOUNT_INFO",
+  "newBusinessTypeCdValue": "641100030001",
+  "updateBusinessTypeCdValue": "641100040001",
+  "deleteBusinessTypeCdValue": "641100050001",
+  "businessTableName": "business_pay_fee_detail_discount",
+  "tableName": "pay_fee_detail_discount",
+  "param": {
+    "detailDiscountId": "detail_discount_id",
+    "bId": "b_id",
+    "feeId": "fee_id",
+    "detailId": "detail_id",
+    "communityId": "community_id",
+    "statusCd": "status_cd",
+    "createTime": "create_time",
+    "discountId": "discount_id",
+    "discountPrice": "discount_price",
+    "remark": "remark",
+    "operate": "operate"
+  },
+  "required": [
+    {
+      "code": "detailId",
+      "msg": "缴费明细不能为空"
+    },
+    {
+      "code": "feeId",
+      "msg": "费用不能为空"
+    },
+    {
+      "code": "discountId",
+      "msg": "优惠不能为空"
+    }
+  ]
+}

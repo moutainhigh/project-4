@@ -1,0 +1,33 @@
+{
+  "templateName": "staffAppAuth",
+  "directories": "property",
+  "templateCode": "staffAppAuth",
+  "templateKey": "auId",
+  "templateKeyName": "认证ID",
+  "searchCode": "auId",
+  "searchName": "认证ID",
+  "conditions": [
+    {
+      "name": "业务类型",
+      "inputType": "input",
+      "code": "businessTypeCd",
+      "whereCondition": "equal"
+    }
+  ],
+  "columns": [
+    {
+      "code": "appType",
+      "cnCode": "认证方式",
+      "desc": "必填，请选择认证方式",
+      "required": true,
+      "hasDefaultValue": false,
+      "inputType": "select",
+      "selectValue": "WECHAT",
+      "selectValueName": "微信",
+      "limit": "maxLength",
+      "limitParam": "12",
+      "limitErrInfo": "认证方式错误",
+      "show": true
+    }
+  ]
+}

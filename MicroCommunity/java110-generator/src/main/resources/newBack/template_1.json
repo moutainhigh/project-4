@@ -1,0 +1,31 @@
+{
+  "autoMove": true,
+  "id": "auId",
+  "name": "staffAppAuth",
+  "desc": "员工微信认证",
+  "shareParam": "storeId",
+  "shareColumn": "store_id",
+  "shareName": "user",
+  "tableName": "staff_app_auth",
+  "param": {
+    "auId": "au_id",
+    "staffId": "staff_id",
+    "storeId": "store_id",
+    "appType": "app_type",
+    "openId": "open_id",
+    "state": "state",
+    "openName": "open_name",
+    "statusCd": "status_cd"
+  },
+  "required": [
+    {
+      "code": "staffId",
+      "msg": "员工不能为空"
+    },
+    {
+      "code": "appType",
+      "msg": "应用类型不能为空"
+    }
+  ]
+}
+
